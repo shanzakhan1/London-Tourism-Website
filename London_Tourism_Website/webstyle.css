@@ -1,0 +1,520 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Didot, 'Courier New', Courier, monospace, Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav li:hover {
+    border-bottom: 2px solid white;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace, Arial, sans-serif;
+    font-size: 14px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #6D4D36;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer a span {
+    margin: 5px;
+}
+
+footer a span:hover {
+    background-color: rgba(255, 0, 0, 0.5); 
+}
+
+footer a img {
+    width: 20px;
+}
+
+body.page-one .hero-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("London_Skyline.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+body.page-one .translucent-rectangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+body.page-one .translucent-rectangle h2 {
+    font-size: 100px;
+}
+
+body.page-one .translucent-rectangle p {
+    font-size: 18px;
+}
+
+body.page-one .black-rectangle {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+body.page-one .black-rectangle h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+body.page-one .black-rectangle p {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace, Arial, sans-serif;
+    margin: 15px;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+body.page-one .subheading {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    margin: 80px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+body.page-one .subheading h3 {
+    color: #6D4D36;
+    font-size: 20px;
+}
+
+body.page-one .subheading2 {
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 20px;
+}
+
+body.page-one .image-gallery {
+    display: flex;
+    width: 100%;
+}
+
+body.page-one .gallery-item {
+    width: 20%;
+    position: relative;
+    height: 300px;
+    overflow: hidden; 
+}
+
+body.page-one .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+body.page-one .gallery-item a:hover img {
+    border: 15px solid red;
+}
+
+body.page-one .caption-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.page-one .top-caption, .bottom-caption {
+    text-align: center;
+    font-size: 14px;
+    padding: 0px;
+    font-family: 'Didot', serif;
+    color: #fff;
+}
+
+body.page-one .top-caption {
+    font-family: 'Didot', serif;
+    color: #fff;
+}
+
+body.page-one .bottom-caption {
+    font-family: 'Courier New', Courier, monospace, Arial, sans-serif;
+    color: #fff;
+}
+
+body.page-one .food-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    margin: 0px;
+    padding: 130px;
+}
+
+body.page-one .food-image {
+    flex: 0 0 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+body.page-one .food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body.page-one .food-content {
+    flex: 0 0 50%;
+    text-align: center;
+    color: #ffffff;
+    padding: 40px;
+}
+
+body.page-one .food-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+body.page-one .food-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace, Arial, sans-serif;   
+}
+
+body.page-one .food-content .btn-learn-more {
+    display: inline-block;
+    background-color: #6D4D36;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace, Arial, sans-serif;
+    margin-top: 20px;
+}
+
+body.page-one .food-content .btn-learn-more:hover {
+    background-color: #ff0000;
+}
+
+body.page-two header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.page-two header a {
+    color: #ffffff;
+}
+
+body.page-two .attraction .subheading {
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+}
+
+body.page-two .attraction-grid,
+body.page-two .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+body.page-two .attraction-item {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+body.page-two .attraction-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+body.page-two .attraction-item h3,
+body.page-two .activity-item h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 8px 0;
+    background-color: #6D4D36;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+body.page-two .attraction-item p,
+body.page-two .activity-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+body.page-two .activities {
+    background-color: #6D4D36;
+    padding: 30px;
+}
+
+body.page-two .activities .subheading {
+    background-color: #6D4D36;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+}
+
+body.page-two .activity-item {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+body.page-two .activity-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+body.page-two .additional-experiences {
+    background-color: #000000;
+    padding: 50px;
+    text-align: center;
+}
+
+body.page-two .additional-experiences h2 {
+    color: #ffffff;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+body.page-two .additional-experiences p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 2;
+}
+
+body.page-two .decorative-border {
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+body.page-two .attraction-item a,
+body.page-two .activity-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #6D4D36;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+body.page-two .attraction-item a:hover,
+body.page-two .activity-item a:hover {
+    background-color: #ff0000;
+}
+
+body.page-three h4 {
+    font-size: 50px;
+    text-align: center;
+    margin: 40px;
+}
+
+body.page-three .grid-rectangle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    background-color: #6D4D36;
+    border: 5px solid #6D4D36;
+}
+
+body.page-three .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+body.page-three .grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+body.page-three .grid-item.white-background {
+    background-color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body.page-three .grid-item.white-background h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+body.page-three .grid-item.white-background p {
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 2;
+}
+
+body.page-three .grid-item.white-background a {
+    color: #6D4D36;
+}
+
+body.page-three .grid-item.white-background a:hover {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+body.page-three .page2-closing {
+    background-color: #6D4D36;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+}
+
+body.page-three .page2-closing h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+body.page-three .page2-closing p {
+    margin-bottom: 20px;
+}
+
+body.error-page {
+    background-color: #6D4D36;
+}
+
+body.error-page .error-404 {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+body.error-page .error-404 h2 {
+    font-size: 36px;
+    color: #6D4D36;
+    margin-bottom: 40px;
+}
+
+body.error-page .error-404 p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000000;
+    line-height: 2;
+}
+
+body.error-page .error-404 ul {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+    padding-left: 20px;
+}
+
+body.error-page .error-404 ul li {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+body.error-page .error-404 a {
+    color: #6D4D36;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.error-page .error-404 a:hover {
+    color: #ff0000;
+}
